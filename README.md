@@ -18,6 +18,7 @@ For Educational purposes only. I am not responsible for any damages such as gett
 - Run the script from an elevated command prompt. Otherwise, pyautogui will not capture the PS Remote Play screen.
 - PS Remote Screen must be on your primary monitor. Make sure the center of the screen is directly on top of the PS Remote Play window. You want it to avoid capturing the terminal window.
 - Make sure the first reward you get is the 4-star ticket. (The script starts there). If not, manually do the Rotary engine ticket before starting the script.
+- Make sure the cursor is on the Cafe when you start the script.
 - Profit!
 
 ## Features
