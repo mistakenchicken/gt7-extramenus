@@ -7,6 +7,9 @@ IMPORTANT:
 
 For Educational purposes only. I am not responsible for any damages such as getting banned, doing something unintended on your system, or any other unintended side effect. Use this at your own risk.
 
+## WORK IN PROGRESS!
+- This was quickly put together, there is barely any testing, so run it at your own risk. Feel free to modify the script to your liking.
+
 ## Instructions (Windows only)
 
 - Install PS Remote Play and set up Remote Play with your console.
