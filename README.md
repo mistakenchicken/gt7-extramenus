@@ -32,15 +32,9 @@ py -m pip install pyautogui
 8. Run the script from an elevated command prompt. Otherwise, pyautogui will not capture the PS Remote Play screen.
 
 ```
-PS > python .\gt7-extramenus.py
-PS > python .\gt7-extramenus.py -h
-usage: gt7-extramenus.py [-h] [--delay [DELAY]] [--auto]
-
-options:
-  -h, --help       show this help message and exit
-  --delay [DELAY]
-  --auto
+python .\gt7-extramenus.py
 ```
+
 **Please read!**
 
 When the script starts, if you don't supply the `--auto` flag, it will give you 5 seconds to manually switch to the PS Remote Play window. 
