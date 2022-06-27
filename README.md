@@ -19,18 +19,32 @@ For Educational purposes only. I am not responsible for any damages such as gett
 
 ## Instructions (Windows only)
 
-- Install PS Remote Play and set up Remote Play with your console.
-- Clone the repository
-- Install python and `pyautogui`
-- PS Remote Screen must be on your primary monitor. Make sure the center of the screen is directly on top of the PS Remote Play window. You want it to avoid capturing the terminal window.
-- Make sure the first reward you get is the 4-star ticket. (The script starts there). If not, manually do the Rotary engine ticket before starting the script.
-- Make sure the cursor is on the Cafe when you start the script.
-- Run the script from an elevated command prompt. Otherwise, pyautogui will not capture the PS Remote Play screen.
+1. Install PS Remote Play and set up Remote Play with your console. Visit https://remoteplay.dl.playstation.net/remoteplay/lang/en/index.html
+2. Clone the repository or download `gt7-extramenus.py`
+3. Install python: https://www.python.org/downloads/ 
+4. Install python module `pyautogui`
+```
+py -m pip install pyautogui
+```
+5. PS Remote Screen must be on your primary monitor.
+6. Make sure the first reward you get is the 4-star ticket. (The script starts there). If not, manually do the Rotary engine ticket before starting the script.
+7. Make sure the cursor is on the Cafe when you start the script.
+8. Run the script from an elevated command prompt. Otherwise, pyautogui will not capture the PS Remote Play screen.
 
 ```
-python.exe .\gt7-extramenus.py
+PS > python .\gt7-extramenus.py
+PS > python .\gt7-extramenus.py -h
+usage: gt7-extramenus.py [-h] [--delay [DELAY]] [--auto]
+
+options:
+  -h, --help       show this help message and exit
+  --delay [DELAY]
+  --auto
 ```
-- Profit!
+
+**IMPORTANT**: If your PS Remote Play connection is poor try passing a `--delay` value (Default is 0.3s), this may improve button press timings
+
+9. Profit!
 
 ## Instructions for using image detection (EXPERIMENTAL)
 
