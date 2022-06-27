@@ -39,3 +39,8 @@ Note: Images were tested using 1980p and 1440p screens but PS Remote Play image 
 Why would you use this? I can't tell you why. But it was good learning more about pyautogui for future exploits that may require image detection.
 
 The original script `gt7-extramenus.py` was using image detection, but it was not as consistent, I believe the main culprit is that the image detection depends in screen resolutions. After trying to use 1080p and 1440p versions for each sample image, I decided it was not worth the effort, even when playing with different areas of the screen and different samples.
+
+## Contributions
+
+Thanks to:
+- https://github.com/nelitow for attempting to improve on the image detection and for fixing typos.
