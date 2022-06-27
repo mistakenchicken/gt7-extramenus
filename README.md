@@ -17,7 +17,7 @@ For Educational purposes only. I am not responsible for any damages such as gett
 ## Features
 - PoC that farms 4 star and engine swap tickets from GT7 v1.17 Extra Menus exploit.
 
-## Instructions (Windows only)
+## Instructions (Tested on Windows and Mac)
 
 1. Install PS Remote Play and set up Remote Play with your console. Visit https://remoteplay.dl.playstation.net/remoteplay/lang/en/index.html
 2. Clone the repository or download `gt7-extramenus.py`
