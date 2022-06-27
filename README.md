@@ -32,6 +32,8 @@ python.exe .\gt7-extramenus.py
 
 ## Instructions for using image detection (EXPERIMENTAL)
 
+- Install the necessary modules: `pyautogui`, `pillow`, `opencv-python`
+
 If you would like to use image detection, simply run `gt7-extramenus-detection.py` instead.
 
 Note: Images were tested using 1980p and 1440p screens but PS Remote Play image quality can yield unpredictable results.
