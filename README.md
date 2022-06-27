@@ -3,6 +3,8 @@
 # gt7-extramenus
 Gran Turismo 7 v1.17 - Extra Menus AFK Exploit
 
+Feel free to buy me a coffee https://www.buymeacoffee.com/mistakenchG
+
 Inspired by: https://github.com/ByPrinciple/GT7-Scripts
 
 IMPORTANT:
