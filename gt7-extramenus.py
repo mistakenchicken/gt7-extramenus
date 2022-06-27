@@ -2,7 +2,7 @@ import time
 import argparse
 import pyautogui
 
-DEFAULT_DELAY = 0.3
+DEFAULT_DELAY = 0.2
 STARTUP_DELAY = 5
 
 
@@ -16,9 +16,17 @@ def parse_args():
         nargs="?",
         const=DEFAULT_DELAY,
         default=DEFAULT_DELAY,
+        help="default = 0.2 - Value must be >= 0.2",
     )
-    parser.add_argument("--auto", action="store_true")
+    parser.add_argument(
+        "--auto",
+        action="store_true",
+        help="automatically captures window on primary monitor",
+    )
     args = parser.parse_args()
+    if args.delay < DEFAULT_DELAY:
+        print("--delay values below 0.2 may break the script. Try another value")
+        exit()
     return args
 
 
@@ -38,6 +46,11 @@ def hold(key: str, duration: float) -> None:
 
     with pyautogui.hold(key):
         time.sleep(duration)
+
+
+def sleep(seconds: float):
+    delay = parse_args().delay
+    time.sleep(seconds - delay + DEFAULT_DELAY)
 
 
 def focus_window(auto):
@@ -69,7 +82,7 @@ def start_exploit(section):
 
     print(" [-] Entering Cafe.")
     press("enter")
-    time.sleep(3)
+    sleep(3)
     press("left")
     press("enter")
     press("down")
@@ -85,16 +98,16 @@ def start_exploit(section):
 
     press("enter")
     press("enter")
-    time.sleep(3)
+    sleep(1)  # Exploiting
     press("escape")
     press("escape")
     press("escape")
-    time.sleep(4)
+    sleep(4)
 
     # Back to map to open ticket
     press("right")
     press("enter")
-    time.sleep(4)
+    sleep(4)
     press("right")
     press("right")
     press("right")
@@ -102,13 +115,13 @@ def start_exploit(section):
     press("enter")
     press("enter")
     print(" [-] Opening ticket.")
-    time.sleep(16)
+    sleep(16)
 
     # Accepting any kind of ticket, avoids using image detection
     press("enter")
-    time.sleep(10)
+    sleep(10)
     press("enter")
-    time.sleep(4)
+    sleep(4)
     press("enter")
     press("enter")
 
@@ -119,7 +132,7 @@ def start_exploit(section):
     print(" [-] Going back to map.")
     press("escape")
     press("escape")
-    time.sleep(3)
+    sleep(3)
     press("left")  # Place cursor on Menu to start over
 
 
