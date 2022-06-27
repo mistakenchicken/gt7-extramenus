@@ -53,7 +53,7 @@ If you are using `--auto`. Make sure the PS Remote Play window is right under th
 
 **Q: My script seems to miss button presses or falls of randomly**
 
-A: If your PS Remote Play connection is poor try passing a `--delay` value **(Default is 0.3s)**, this may improve button press timings
+A: If your PS Remote Play connection is poor try passing a `--delay` value **(Default is 0.2s)**, this may improve button press timings
 
 ## Instructions for using image detection (EXPERIMENTAL)
 
