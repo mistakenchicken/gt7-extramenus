@@ -11,7 +11,7 @@ For Educational purposes only. I am not responsible for any damages such as gett
 - This was quickly put together, there is barely any testing, so run it at your own risk. Feel free to modify the script to your liking.
 
 ## Features
-- Poc that farms 4 star and engine swap tickets from GT7 v1.17 Extra Menus exploit.
+- PoC that farms 4 star and engine swap tickets from GT7 v1.17 Extra Menus exploit.
 
 ## Instructions (Windows only)
 
