@@ -41,10 +41,19 @@ options:
   --delay [DELAY]
   --auto
 ```
+**Please read!**
 
-**IMPORTANT**: If your PS Remote Play connection is poor try passing a `--delay` value (Default is 0.3s), this may improve button press timings
+When the script starts, if you don't supply the `--auto` flag, it will give you 5 seconds to manually switch to the PS Remote Play window. 
+
+If you are using `--auto`. Make sure the PS Remote Play window is right under the center of your primary screen. You want it to avoid capturing the terminal window.
 
 9. Profit!
+
+## Troubleshooting
+
+**Q: My script seems to miss button presses or falls of randomly**
+
+A: If your PS Remote Play connection is poor try passing a `--delay` value **(Default is 0.3s)**, this may improve button press timings
 
 ## Instructions for using image detection (EXPERIMENTAL)
 
@@ -62,3 +71,4 @@ The original script `gt7-extramenus.py` was using image detection, but it was no
 
 Thanks to:
 - https://github.com/nelitow for attempting to improve on the image detection and for fixing typos.
+- The /r/granturismo subreddit community for feedback.
