@@ -34,7 +34,7 @@ def focus_window():
     time.sleep(1)
 
 
-def detect_creen(screen):
+def detect_screen(screen):
 
     width, height = pyautogui.size()
     halfwidth = int(width / 2)
@@ -61,7 +61,8 @@ def start_exploit(section):
 
     print(" [-] Entering Cafe.")
     press("enter")
-    time.sleep(3)
+    print(" [-] Sleeping 5.")
+    time.sleep(5)
     press("left")
     press("enter")
     press("down")
@@ -70,22 +71,25 @@ def start_exploit(section):
     press("up")
 
     if section == "ROTARY":
+        print(" [-] Entering ROTARY.")
         press("right")
         press("right")
         # Inside Rotary Engine
 
     press("enter")
+    time.sleep(1)
     press("enter")
     time.sleep(3)
     press("escape")
     press("escape")
     press("escape")
-    time.sleep(4)
+    print(" [-] Exiting Cafe. Sleep 8.")
+    time.sleep(8)
 
     # Back to map to open ticket
     press("right")
     press("enter")
-    time.sleep(4)
+    time.sleep(12)
     press("right")
     press("right")
     press("right")
@@ -99,7 +103,7 @@ def start_exploit(section):
 
     if section != "ROTARY":  # if ticket is 4-start
 
-        if detect_creen("cartext"):
+        if detect_screen("cartext"):
             print("Car screen detected.")
             press("enter")
             time.sleep(10)
@@ -107,14 +111,14 @@ def start_exploit(section):
             time.sleep(4)
             press("enter")
             press("enter")
-        elif detect_creen("creditstext"):
+        elif detect_screen("creditstext"):
             print("Credits screen detected.")
             press("enter")
             time.sleep(5)
             press("enter")
-        elif detect_creen("tuningtext"):
+        elif detect_screen("tuningtext"):
             print("Tuning part screen detected.")
-        elif detect_creen("invitationtext"):
+        elif detect_screen("invitationtext"):
             print("Invitation screen detected.")
         else:
             print("No Screen detected. Exiting Now")
@@ -127,11 +131,11 @@ def start_exploit(section):
     print(" [-] Going back to map.")
     press("escape")
     press("escape")
-    time.sleep(3)
+    time.sleep(8)
     press("left")  # Place cursor on Menu to start over
 
 
 if __name__ == "__main__":
     while True:
-        start_exploit("")
         start_exploit("ROTARY")
+        start_exploit("")
