@@ -102,7 +102,7 @@ def start_exploit(section):
     press("escape")
     press("escape")
     press("escape")
-    sleep(2.5)
+    sleep(4)
 
     # Back to map to open ticket
     press("right")
