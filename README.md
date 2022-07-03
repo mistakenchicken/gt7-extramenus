@@ -43,7 +43,7 @@ pyton -m pip install pyautogui
 python .\gt7-extramenus.py
 ```
 
-### PS4
+### PS4 ⚠️ EXPERIMENTAL (WIP)
 ```
 python .\gt7-extramenus-ps4.py
 ```
