@@ -99,7 +99,7 @@ def start_exploit(section):
     press("enter")
 
     press("enter")
-    sleep(2)  # Exploiting
+    sleep(1)  # Exploiting
     press("escape")
     press("escape")
     press("escape")

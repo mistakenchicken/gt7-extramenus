@@ -44,6 +44,7 @@ python .\gt7-extramenus.py
 ```
 
 ### PS4 ⚠️ EXPERIMENTAL (WIP)
+There's mixed feedback, make sure it is running appropriately for a few cycles before leaving AFK, you don't want any legendary cars purchased by mistake.
 ```
 python .\gt7-extramenus-ps4.py
 ```
