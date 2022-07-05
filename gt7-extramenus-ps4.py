@@ -116,7 +116,7 @@ def start_exploit(section):
     press("enter")
     press("enter")
     print(" [-] Opening ticket.")
-    sleep(16)
+    sleep(18)
 
     # Accepting any kind of ticket, avoids using image detection
     print(" [-] Accepting ticket.")
@@ -124,9 +124,9 @@ def start_exploit(section):
 
     # skip superfluous times for rotary tickets
     if section != "ROTARY":
-        sleep(11)
+        sleep(16)
         press("enter")
-        sleep(4)
+        sleep(6)
         press("enter")
         press("enter")
         press("enter")  # accept ticket
