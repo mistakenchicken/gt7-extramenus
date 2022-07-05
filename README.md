@@ -31,7 +31,7 @@ For Educational purposes only. I am not responsible for any damages such as gett
 
 4. Install python module `pyautogui`
 ```
-pyton -m pip install pyautogui
+python -m pip install pyautogui
 ```
 5. PS Remote Screen must be on your primary monitor.
 6. Make sure the first reward you get is the 4-star ticket. (The script starts there). If not, manually do the Rotary engine ticket before starting the script.
