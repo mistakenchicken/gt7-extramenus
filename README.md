@@ -82,3 +82,4 @@ Thanks to:
 - https://reddit.com/U/Whmeh0 on /r/granturismo for determining the timings for gt7-extramenus-ps4.py
 - https://github.com/dehydratedH2O for optimizing the timings (~20s faster) on rotary ticket roulette screen
 - The /r/granturismo subreddit community for feedback.
+- https://github.com/simo92to and https://github.com/Threule for ps4 version timings and testing.
