@@ -118,15 +118,17 @@ def start_exploit(section):
     sleep(16)
 
     # Accepting any kind of ticket, avoids using image detection
-    press("enter")
-    sleep(10)
-    press("enter")
-    sleep(4)
-    press("enter")
+    print(" [-] Accepting ticket.")
     press("enter")
 
-    print(" [-] Accepting ticket.")
-    press("enter")  # accept ticket
+    #skip superfluous times for rotary tickets
+    if section != "ROTARY":
+        sleep(10)
+        press("enter")
+        sleep(4)
+        press("enter")
+        press("enter")
+        press("enter")  # accept ticket
 
     # Back out of tickets
     print(" [-] Going back to map.")
